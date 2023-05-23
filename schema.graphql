@@ -1,0 +1,17 @@
+type ChangeEvent @entity(immutable: true) {
+  id: Bytes!
+  name: String! # string
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type TransferEvent @entity(immutable: true) {
+  id: Bytes!
+  from: Bytes! # address
+  to: Bytes! # address
+  amount: BigInt! # uint256
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
