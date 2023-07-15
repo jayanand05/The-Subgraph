@@ -20,7 +20,7 @@ export function handleChangeEvent(event: ChangeEventEvent): void {
 export function handleTransferEvent(event: TransferEventEvent): void {
   let entity = new TransferEvent(
     event.transaction.hash.concatI32(event.logIndex.toI32())
-  )
+  );
   entity.from = event.params.from;
   entity.to = event.params.to;
   entity.amount = event.params.amount;
