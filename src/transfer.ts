@@ -2,7 +2,7 @@ import {
   ChangeEvent as ChangeEventEvent,
   TransferEvent as TransferEventEvent
 } from "../generated/Transfer/Transfer";
-import { ChangeEvent, TransferEvent } from "../generated/schema";dscfvfvg
+import { ChangeEvent, TransferEvent } from "../generated/schema";
 
 export function handleChangeEvent(event: ChangeEventEvent): void {
   let entity = new ChangeEvent(
